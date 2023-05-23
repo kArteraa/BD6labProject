@@ -1,0 +1,45 @@
+//compress: true 
+@import 'vars';
+
+body {
+    font-family: @mons;
+    height: 100vh;
+    background-color: #212121;
+    margin: 0;
+    color: #fff;
+    
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#unselectable {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none;           
+
+  }
+
+
+//******** BLOCKS ************
+
+@import "blocks/containers";
+@import 'blocks/headers';
+@import 'blocks/nav';
+@import 'blocks/main';
+@import 'blocks/edit';
