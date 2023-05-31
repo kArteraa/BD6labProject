@@ -1,0 +1,86 @@
+//main: ../style.less
+
+.main {
+    margin-top: 100px;
+    text-align: center;
+
+    &__form {
+        margin-top: 10px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+
+        &__personal {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+
+            &__block {
+
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid #fff;
+                padding: 10px 15px;
+
+                text-align: left;
+                font-size: 12px;
+
+                margin-top: 10px;
+                
+                &__btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    &__edit {
+                        text-decoration: none;
+                        color:#fff;
+                        cursor:pointer;
+                        border:1px solid #fff;
+                        text-align: center;
+                        background: none;
+
+                        padding: 10px 15px;
+                        
+                        transition: .1s linear;
+
+                        &:active {
+                            background: #9c9c9c;
+                            border:1px solid #111   ;
+                            color: #111;
+                        }
+                    }
+                }
+            }
+        }
+        &__deliveries {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+
+            &__block {
+                display: flex;
+                justify-content: space-between;
+
+                border: 1px solid #fff;
+                padding: 10px 15px;
+
+                text-align: left;
+                font-size: 12px;
+
+                margin-top: 10px;
+                
+                &__btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                }
+            }
+        }
+    }
+    
+}
